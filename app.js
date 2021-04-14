@@ -84,7 +84,7 @@ function handleOperations(key){
                 tempNum = currNum.slice(1)
             } else {
                 tempNum = '-' + currNum
-                if (currNum === '-'){
+                if (tempNum === '-'){
                   tempNum = '-0'
                 }
             }
