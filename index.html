@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="calc-body">
+            <div id="status-bar">
+                <div id="status-text">
+                    <img src="https://win98icons.alexmeub.com/icons/png/help_book_computer-2.png" alt="Calculator Icon">
+                    <p>Calculator</p>
+                </div>
+                <div id="status-buttons">
+                    <button class="td-btn" disabled><img src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/54c49e4e59f38d2.png"></button>
+                    <button class="td-btn" disabled><img src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/fa6332edb6a0a75.png"></button>
+                    <button class="td-btn" disabled><img src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/1449a30121afa0c.png"></button>
+                </div>
+            </div>
+            <div id="text-menu">
+                <p><span class="border-menu">E</span>dit</p>
+                <p><span class="border-menu">V</span>iew</p>
+                <p><span class="border-menu">H</span>elp</p>
+            </div>
+            <div id="td-separator"></div>
+            <div class="container">
+                <input id="operations" type="text" value="0." maxlength="5" readonly>
+                <div id="top-buttons">
+                    <div class="left-top">
+                        <input id="m-field" type="text" readonly value="">
+                    </div>
+                    <div class="right-top">
+                        <button class="td-btn mr-btn" data-del="back">Back</button>
+                        <button class="td-btn mr-btn" data-del="all">CE</button>
+                        <button class="td-btn mr-btn" data-del="curr">C</button>
+                    </div>
+                </div>
+                <div id="bottom-buttons">
+                    <div class="left-column">
+                        <button class="td-btn rd-btn" data-memory="clear">MC</button>
+                        <button class="td-btn rd-btn" data-memory="recall">MR</button>
+                        <button class="td-btn rd-btn" data-memory="save">MS</button>
+                        <button class="td-btn rd-btn" data-memory="sum">M+</button>
+                    </div>
+                    <div class="right-column">
+                        <button class="td-btn bl-btn" data-value="7">7</button>
+                        <button class="td-btn bl-btn" data-value="8">8</button>
+                        <button class="td-btn bl-btn" data-value="9">9</button>
+                        <button class="td-btn rd-btn" data-arithmetic="/">/</button>
+                        <button class="td-btn dk-btn" data-special="sqrt">sqrt</button>
+                        <button class="td-btn bl-btn" data-value="4">4</button>
+                        <button class="td-btn bl-btn" data-value="5">5</button>
+                        <button class="td-btn bl-btn" data-value="6">6</button>
+                        <button class="td-btn rd-btn" data-arithmetic="*">*</button>
+                        <button class="td-btn dk-btn" data-special="%">%</button>
+                        <button class="td-btn bl-btn" data-value="1">1</button>
+                        <button class="td-btn bl-btn" data-value="2">2</button>
+                        <button class="td-btn bl-btn" data-value="3">3</button>
+                        <button class="td-btn rd-btn" data-arithmetic="-">-</button>
+                        <button class="td-btn dk-btn" data-special="1x">1/x</button>
+                        <button class="td-btn bl-btn" data-value="0">0</button>
+                        <button class="td-btn bl-btn" data-operation="opposite">+/-</button>
+                        <button class="td-btn bl-btn" data-operation=".">.</button>
+                        <button class="td-btn rd-btn" data-arithmetic="+">+</button>
+                        <button class="td-btn rd-btn" data-arithmetic="=">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
