@@ -80,6 +80,7 @@ function handleOperations(key){
             currNum = opDisplay.value
             break
         case 'opposite':
+            if (!currNum) return
             if (currNum.indexOf('-') > -1){
                 tempNum = currNum.slice(1)
             } else {
